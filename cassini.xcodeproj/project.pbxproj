@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1357A54A1F5E13D4002B4812 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357A5491F5E13D4002B4812 /* AppDelegate.swift */; };
-		1357A54C1F5E13D4002B4812 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357A54B1F5E13D4002B4812 /* ViewController.swift */; };
 		1357A54F1F5E13D4002B4812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1357A54D1F5E13D4002B4812 /* Main.storyboard */; };
 		1357A5511F5E13D4002B4812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1357A5501F5E13D4002B4812 /* Assets.xcassets */; };
 		1357A5541F5E13D4002B4812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1357A5521F5E13D4002B4812 /* LaunchScreen.storyboard */; };
+		1357A55D1F5E14A8002B4812 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357A55C1F5E14A8002B4812 /* ImageViewController.swift */; };
+		1357A55F1F5E1F88002B4812 /* DemoUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1357A55E1F5E1F88002B4812 /* DemoUrl.swift */; };
+		13F485E41F62F7AE002612EB /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F485E31F62F7AE002612EB /* CassiniViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1357A5461F5E13D4002B4812 /* cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1357A5491F5E13D4002B4812 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1357A54B1F5E13D4002B4812 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1357A54E1F5E13D4002B4812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1357A5501F5E13D4002B4812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1357A5531F5E13D4002B4812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1357A5551F5E13D4002B4812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1357A55C1F5E14A8002B4812 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		1357A55E1F5E1F88002B4812 /* DemoUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoUrl.swift; sourceTree = "<group>"; };
+		13F485E31F62F7AE002612EB /* CassiniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		1357A5481F5E13D4002B4812 /* cassini */ = {
 			isa = PBXGroup;
 			children = (
-				1357A5491F5E13D4002B4812 /* AppDelegate.swift */,
-				1357A54B1F5E13D4002B4812 /* ViewController.swift */,
 				1357A54D1F5E13D4002B4812 /* Main.storyboard */,
-				1357A5501F5E13D4002B4812 /* Assets.xcassets */,
-				1357A5521F5E13D4002B4812 /* LaunchScreen.storyboard */,
+				1357A55C1F5E14A8002B4812 /* ImageViewController.swift */,
+				13F485E31F62F7AE002612EB /* CassiniViewController.swift */,
+				1357A55E1F5E1F88002B4812 /* DemoUrl.swift */,
 				1357A5551F5E13D4002B4812 /* Info.plist */,
+				1357A55B1F5E13FE002B4812 /* Supporting Files */,
 			);
 			path = cassini;
+			sourceTree = "<group>";
+		};
+		1357A55B1F5E13FE002B4812 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1357A5521F5E13D4002B4812 /* LaunchScreen.storyboard */,
+				1357A5501F5E13D4002B4812 /* Assets.xcassets */,
+				1357A5491F5E13D4002B4812 /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1357A54C1F5E13D4002B4812 /* ViewController.swift in Sources */,
+				1357A55D1F5E14A8002B4812 /* ImageViewController.swift in Sources */,
+				1357A55F1F5E1F88002B4812 /* DemoUrl.swift in Sources */,
 				1357A54A1F5E13D4002B4812 /* AppDelegate.swift in Sources */,
+				13F485E41F62F7AE002612EB /* CassiniViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +320,7 @@
 				1357A55A1F5E13D4002B4812 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
